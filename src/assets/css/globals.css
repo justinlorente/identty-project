@@ -1,0 +1,36 @@
+@import '../components/index.css';
+@import './base/variables.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-fill-both {
+    animation-fill-mode: both;
+  }
+  .animation-delay-0 {
+    animation-delay: 0s;
+  }
+  .animation-delay-2 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4 {
+    animation-delay: 4s;
+  }
+  .animation-delay-6 {
+    animation-delay: 6s;
+  }
+  .animation-delay-8 {
+    animation-delay: 8s;
+  }
+  .animation-delay-10 {
+    animation-delay: 10s;
+  }
+  .iteration-count-1 {
+    animation-iteration-count: 1;
+  }
+  .iteration-count-infinite {
+    animation-iteration-count: infinite;
+  }
+}

@@ -1,0 +1,26 @@
+.Accordion {
+  @apply w-full;
+  @apply lg:h-screen md:flex md:flex-col lg:flex-row;
+  &-header {
+    @apply h-full relative mb-5;
+    @apply md:flex md:items-center md:justify-center;
+  }
+  &-content {
+    &.show {
+      @apply h-auto opacity-100 delay-150 ease-in-out duration-300;
+    }
+    &.hide {
+      @apply h-0 overflow-hidden opacity-0 delay-150  ease-in-out duration-300;
+    }
+  }
+  &-toggle-button {
+    @apply z-30 relative h-[2.7rem] w-full max-w-[2.7rem] flex flex-row mx-6 justify-center items-center border-[1px] border-gray-light rounded-full text-center text-gray ml-auto;
+  }
+  &-item {
+    width: 80%;
+    &.closed {
+      width: 20%;
+    }
+  }
+  
+}

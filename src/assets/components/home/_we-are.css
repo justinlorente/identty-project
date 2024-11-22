@@ -1,0 +1,23 @@
+.Home-we-are {
+  @apply container mx-auto;
+  &-header {
+    @apply font-poppins px-6;
+    .title-wrapper {
+      @apply w-full max-w-[15rem];
+      @apply md:max-w-full;
+      .title {
+        @apply font-light text-[2.75rem] text-left pb-5 leading-[3.2rem];
+        @apply md:font-extralight lg:text-7xl leading-[1.1];
+      }
+    }
+  }
+  &-content {
+    @apply w-full max-w-[20rem] text-left font-poppins px-6;
+    .title {
+      @apply font-extralight text-2xl pb-4;
+    }
+    .subtitle {
+      @apply font-extralight text-base;
+    }
+  }
+}

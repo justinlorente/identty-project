@@ -1,0 +1,30 @@
+.FooterNavigation {
+  @apply font-poppins w-full fixed bottom-0 py-8 px-7;
+  &-wrapper {
+    @apply flex flex-row items-center justify-between w-full;
+    .left-button {
+      @apply flex flex-row items-center justify-between w-full max-w-[8rem];
+    }
+    .open-footer-button {
+      @apply flex flex-row items-center;
+    }
+    .manifesto-footer-button {
+      @apply flex flex-row items-center;
+    }
+    .text-footer {
+      @apply font-extralight text-xs px-[8px];
+    }
+    .text-manifesto {
+      @apply font-medium text-xs px-2;
+    }
+    .icon {
+      @apply text-red;
+      &.minus {
+        @apply w-[20px] before:content-['-'] text-[30px];
+      }
+      &.plus {
+        @apply w-[20px] before:content-['+'] text-[20px] font-medium;
+      }
+    }
+  }
+}

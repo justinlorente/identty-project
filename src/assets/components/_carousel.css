@@ -1,0 +1,34 @@
+.Carousel {
+  &-item {
+    @apply bg-white px-[43.5px] pt-[48px] pb-[39px];
+    @apply lg:px-[47px];
+  }
+  &-title {
+    @apply font-poppins font-medium mb-[1.313rem] uppercase;
+    @apply 2xl:text-[0.625vw];
+  }
+  &-description {
+    @apply font-poppins font-extralight text-sm w-[13.013rem] mb-[3.375rem] relative z-[888];
+    @apply lg:w-[16.313rem] lg:text-[0.8333333333333334vw];
+  }
+  &-name,
+  &-position {
+    @apply font-poppins font-extralight text-xs;
+    @apply xl:text-[0.8333333333333334vw] 2xl:text-[0.625vw];
+  }
+}
+@media (min-width: 1280px) {
+  .Carousel {
+    &-item {
+      @apply px-[35px];
+    }
+  }
+}
+
+@media (min-width: 1930px) {
+  .Carousel {
+    &-description {
+      @apply text-[0.625vw];
+    }
+  }
+}

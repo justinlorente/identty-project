@@ -1,0 +1,121 @@
+.HomeReviews {
+  @apply relative pt-[6.5rem]  lg:pt-[14.563rem] pb-[11.563rem] bg-[#F7F7F7];
+  &-wrapper {
+    @apply flex w-full flex-col justify-between;
+    @apply lg:flex-row;
+  }
+  &-content {
+    @apply md:w-[35rem] md:mr-auto md:ml-0 md:px-[3rem] lg:px-0 lg:w-[50%] lg:ml-[5rem] lg:max-w-[22rem] xl:ml-[6rem] 2xl:ml-[7rem] 2xl:mr-[9.375rem] xl:max-w-[31.25rem];
+  }
+  &-carousel {
+    @apply w-full;
+    @apply lg:w-[32.6rem] xl:w-[46.5rem] 2xl:w-[54rem];
+  }
+  &-sayAbout {
+    @apply font-poppins font-semibold text-red mb-[1.6rem] px-8 md:px-0 lg:text-[1.07421875vw] xl:text-[0.625vw] xl:pl-1 xl:mb-[0.8rem];
+  }
+  &-title {
+    @apply font-poppins text-[40px] font-extralight text-gray-dark text-left w-full mb-[0.875rem] max-w-[20rem] mx-auto;
+    @apply lg:text-[3.90625vw] lg:leading-[3.4rem] md:max-w-[31.25rem] xl:leading-[4.1rem] xl:max-w-[24rem] xl:mb-4 xl:ml-0 xl:text-[3.6458333333333335vw] 2xl:max-w-[32rem];
+  }
+  &-text {
+    @apply font-poppins text-[1.25rem] font-extralight text-gray-dark text-left leading-[1.875rem] w-full max-w-[20.3rem] mx-auto mb-8;
+    @apply md:max-w-[31.25rem] lg:text-[1.953125vw] lg:mb-0 xl:text-[1.3541666666666667vw] xl:max-w-[23rem] xl:ml-0 2xl:max-w-[30rem];
+  }
+  &-carousel {
+    @apply relative;
+    .BrainhubCarouselItem {
+      @apply justify-end lg:justify-start !important;
+    }
+    .BrainhubCarousel__arrows.BrainhubCarousel__arrowLeft {
+      @apply absolute top-[31.25rem];
+    }
+    .BrainhubCarousel__arrows.BrainhubCarousel__arrowRight {
+      @apply absolute top-[31.25rem] left-[2rem];
+    }
+  }
+
+  .arrow-left {
+    @apply bg-arrow-left bg-no-repeat bg-contain h-3 w-3 flex;
+  }
+  .arrow-right {
+    @apply bg-arrow-right bg-no-repeat bg-contain h-3 w-3 flex;
+  }
+  .button-left {
+    @apply absolute left-[1.5rem] lg:left-auto bottom-[-4.1rem];
+  }
+  .button-right {
+    @apply absolute left-[4rem] lg:left-[4rem] bottom-[-4.1rem];
+  }
+}
+@media (max-width: 1420px ) {
+  .HomeReviews  {
+    &-carousel {
+      @apply w-[50rem];
+    }
+    &-content {
+      @apply ml-[8rem];
+    }
+    &-text {
+      @apply max-w-[20rem] leading-[1.6rem];
+    }
+  }
+}
+
+@media (max-width: 1280px ) {
+  .HomeReviews  {
+    &-carousel {
+      @apply w-[48.1rem];
+    }
+    &-content {
+      @apply ml-[5rem];
+    }
+    &-text {
+      @apply max-w-[20rem] leading-[1.6rem];
+    }
+  }
+}
+@media (min-width: 1025px ) (max-width: 1265px ) {
+  .HomeReviews {
+    &-carousel {
+      @apply w-[43rem];
+    } 
+  }
+}
+
+@media (min-width: 1920px) {
+  .HomeReviews {
+    &-title {
+      @apply leading-[5.1rem]
+    }
+    &-content {
+      @apply ml-[17rem];
+    }
+  }
+}
+
+@media (min-width: 1930px) { 
+  .HomeReviews {
+    &-wrapper {
+     @apply mx-auto w-full max-w-[1900px];
+    }
+    &-content {
+      @apply ml-[12rem] mr-[8rem] max-w-[70rem];
+    }
+    &-title {
+      @apply max-w-[47rem] leading-[6.7rem];
+    }
+    &-text {
+      @apply max-w-[41rem] leading-[2.9rem] mr-auto ml-0;
+    }
+  }
+  .HomeContactUs {
+    @apply pl-0 !important; 
+    &-content {
+      @apply w-[39.2rem] !important;
+      .text {
+        @apply w-[42rem];
+      }
+    }
+  }
+ }

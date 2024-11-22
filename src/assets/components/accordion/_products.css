@@ -1,0 +1,49 @@
+.AccordionItemProducts {
+  @apply flex w-full h-full flex-col overflow-x-hidden overflow-y-hidden hover:cursor-pointer;
+  @apply md:flex-col lg:flex-row;
+}
+.AccordionProductsItem {
+  @apply h-full flex relative justify-center items-start w-full max-w-[60rem] transition-all duration-1000 ease-in-out delay-700;
+  @apply md:flex-col;
+  &-image {
+    @apply bg-no-repeat h-[25rem] w-[25rem] bg-contain bg-center transition-all duration-1000 ease-in-out delay-700;
+    @apply md:w-full md:h-[310px] lg:h-[45rem] lg:w-[60rem] xl:w-[50rem] xl:h-[40rem] 2xl:w-[60rem] 2xl:h-[45rem];
+    &.project-1 {
+      @apply bg-home-project-pattern;
+    }
+    &.project-2 {
+      @apply bg-home-project-pattern-2;
+    }
+    &.project-3 {
+      @apply bg-home-project-pattern-3;
+    }
+    &.project-4 {
+      @apply bg-home-project-pattern-4;
+    }
+  }
+  &-information {
+    @apply font-poppins left-0 text-white pl-[3rem] pr-4 opacity-0 transition-all duration-1000 ease-in-out delay-700  bottom-[3%];
+    @apply absolute !important;
+    .service {
+      @apply font-medium text-xs uppercase tracking-wider;
+    }
+    .brand {
+      @apply font-extralight text-2xl;
+    }
+  }
+}
+
+@media (min-width: 1930px) {
+ .AccordionProductsItem:nth-child(1) {
+  @apply mx-[6.25vw];
+}
+}
+.AccordionProductsItem:nth-child(2) {
+  @apply bg-purple;
+}
+.AccordionProductsItem:nth-child(3) {
+  @apply bg-green;
+}
+.AccordionProductsItem:nth-child(4) {
+  @apply bg-[#75A3C3];
+}

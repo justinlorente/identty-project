@@ -1,0 +1,28 @@
+.ScrollDown {
+  @apply hidden md:block fixed left-0 top-[55%] z-[100] bottom-auto w-[64px] ease-in-out duration-300 delay-200;
+  &-wrapper {
+    @apply  rotate-[270deg];
+  }
+  &-textWrapper {
+    @apply absolute left-[5rem] w-[5rem] top-[-6px];
+  }
+  &-text {
+    @apply font-poppins font-medium text-[10px] text-gray-dark;
+  }
+  &-progressBar {
+    @apply relative rotate-[540deg] overflow-hidden ;
+    .bar {
+      @apply flex bg-[#D4D5D7] w-[60px] h-[1.2px] relative;
+    }
+    .progress {
+      @apply absolute h-[1.2px] w-[30px] bg-black right-0;
+    }
+  }
+}
+
+*:has(.opened) {
+  .ScrollDown {
+    @apply opacity-0 ease-in-out duration-300 delay-200;
+  }
+}
+

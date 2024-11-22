@@ -1,0 +1,30 @@
+.section-absolute-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  &.left {
+    right: auto;
+    left: 0;
+  }
+}
+
+.container-mx-auto {
+  @apply mx-auto;
+}
+
+.grid-cols-2-container {
+  @apply grid grid-cols-2;
+  gap: 15rem;
+}
+
+.grid-cols-2-start-2 {
+  @apply col-start-2;
+}
+
+.font-dark {
+  color: #272f37;
+}

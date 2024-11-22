@@ -1,0 +1,28 @@
+.Home {
+  &-services {
+    @apply bg-[#F7F7F7] h-full w-full overflow-hidden pt-[7rem] pb-[10rem] xl:py-[16rem];
+    .service {
+      @apply font-poppins font-extralight text-[15.384615384615385vw] mx-5;
+      @apply xl:text-[9.208333333333333vw] 2xl:text-[6.25vw];
+      .text-dark {
+        @apply text-[#252F38];
+      }
+      .text-light {
+        @apply text-[#8A9BAC];
+      }
+    }
+    .slick-slider {
+      @apply h-[5rem] md:h-[8rem] lg:h-[10rem];
+    }
+  }
+  &-servicesBtnWrapper {
+    @apply font-poppins text-center flex flex-row justify-center items-center cursor-pointer;
+    @apply pt-[3rem] xl:pt-[5rem];
+    .SeeMoreButton-btnWrapper {
+      @apply mx-auto;
+      .btn-text {
+        @apply xl:w-[9rem];
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.Home {
+  @apply flex flex-col;
+  @apply md:flex-row;
+  &-projects {
+    @apply flex flex-row h-full relative;
+    .image {
+      @apply absolute bg-contain bg-top bg-no-repeat bg-home-project-pattern w-full h-[17.1rem] bottom-[-1.1rem];
+      @apply md:top-0 md:left-0 md:right-0 md:bottom-0;
+    }
+    &-bellify {
+      @apply bg-purple h-[14.6rem] flex flex-row items-center;
+      .image {
+        @apply absolute  bg-contain bg-center  bg-no-repeat bg-home-project-pattern-2 h-[14rem];
+      }
+    }
+    &-selvatica {
+      @apply relative bg-green h-[14.6rem] flex flex-row items-center;
+      .image {
+        @apply absolute bg-contain bg-center bg-no-repeat bg-home-project-pattern-3 w-full h-full;
+      }
+    }
+    &-brand {
+      @apply relative flex flex-col justify-end font-poppins text-white px-5 pb-5  z-30 self-end;
+
+      .brand-service {
+        @apply uppercase text-xs tracking-wider leading-6;
+      }
+      .brand-name {
+        @apply font-extralight text-2xl tracking-wider;
+      }
+    }
+  }
+}
+.Accordion:nth-child(2) {
+  .Accordion-header {
+    @apply bg-yellow h-[14.6rem];
+    @apply md:h-full;
+  }
+}

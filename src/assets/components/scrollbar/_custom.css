@@ -1,0 +1,25 @@
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  background-color: transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d10015;
+  border-radius: 0px;
+  border: 0px none #d10015;
+}
+*:has(.show-footer) {
+  overflow-y: hidden;
+}
+

@@ -1,0 +1,52 @@
+.HomeContactUs {
+  @apply px-[2rem] pt-[5rem] pb-[7rem] flex flex-col lg:flex-row container mx-auto justify-between  md:px-[4rem] lg:py-[7rem] lg:pl-[5rem] lg:pr-[3.8rem] xl:py-0 xl:my-40 xl:pl-[3rem] xl:pr-[5.8rem] 2xl:px-[5.8rem];
+  &-content {
+    @apply font-poppins pb-[3rem] lg:pb-0 lg:w-[26rem] xl:w-[23.8rem] 2xl:w-[31.8rem];
+    .contact {
+      @apply font-semibold text-red text-left lg:text-[1.07421875vw] xl:text-[0.625vw] pl-1;
+    }
+    .say-hi {
+      @apply font-extralight  text-[40px] lg:text-[3.90625vw] xl:text-[3.6458333333333335vw] mb-4;
+    }
+    .future {
+      @apply font-extralight text-[1.25rem] lg:text-[1.953125vw] xl:text-[1.3541666666666667vw] mb-6;
+    }
+    .text {
+      @apply font-extralight text-[14px] lg:text-[1.26953125vw] xl:text-[0.8333333333333334vw];
+      P {
+        @apply pb-2 xl:pb-3;
+      }
+    }
+  }
+  &-formWrapper {
+    @apply font-poppins flex flex-col text-[14px]  xl:text-[0.7291666666666666vw] 2xl:w-[527px];
+    form {
+      @apply flex flex-col lg:pt-[2.5rem] xl:pt-16;
+      input,
+      textarea {
+        @apply px-0 focus:ring-0 focus:outline-0 border-b-[1px] border-black mb-8 pb-2 shadow-none placeholder:text-[12px] lg:placeholder:text-[0.9765625vw] lg:text-[1.171875vw]   xl:text-[0.7291666666666666vw] xl:placeholder:text-[0.625vw] font-bold placeholder:font-extralight placeholder-gray-dark;
+      }
+      textarea {
+        @apply pb-20 border-0 border-b-[1px] focus:outline-0 shadow-none;
+      }
+    }
+    .terms {
+      @apply flex items-center text-[8px] lg:text-[0.625vw] font-extralight mb-3;
+      input {
+        @apply m-0 mr-2 rounded-full h-[15px] w-[15px] cursor-pointer border-gray-dark;
+      }
+    }
+    .captcha {
+      @apply text-[8px] lg:text-[0.625vw] ml-6 font-extralight text-gray-dark;
+      span {
+        @apply border-b-[0.2px]  leading-[9.4px] w-fit border-gray-light;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) and (min-width: 1279px)  {
+  .HomeContactUs {
+    @apply pl-[6rem] pr-[9rem];
+  }
+}
